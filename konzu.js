@@ -10,7 +10,7 @@ let rememberMsg = null;
 let servers = {};
 const sign = '!';
 
-bot.login('NDMwMzcwNjg2ODU1NDEzNzcw.DdDX6Q.ex6ws-DwWc88BDQgZ5j_PGpovXE');
+bot.login('process.env.TOKEN');
 // let stop = false; // for use with while and setTimeout
 
 bot.on('ready', function () {
