@@ -1,1 +1,1 @@
-worker: node kenzo.js
+worker: node konzu.js
