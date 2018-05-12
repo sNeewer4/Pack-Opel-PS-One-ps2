@@ -170,12 +170,11 @@ function update(discord_message, channel) {
                         message.content = `il fait jour\n**__Temps restant__**\n${moment(added_time).format('HH:mm:ss')}\n**__Debut de la nuit__**\n à ${data_expiry.format('HH:mm')}`
                         message.img = "https://vignette.wikia.nocookie.net/warframe/images/c/cc/Conclave_Sun.png/revision/latest?cb=20150322082734"
                         if(moment(expire_in).valueOf() < 6000000 && !rememberMsgSent){ // moins de 20 mins
-                                //message.guild.roles.find("name","Surah");
                                 const embed = new Discord.RichEmbed()
                                 .setTitle("[**__les dernières minutes __**]")
                                 .setURL("https://hub.warframestat.us")
                                 .setColor("#F4661B")
-                                .setDescription('hey <@${myRole.id}> Les teralystes arrivent dans quelques minutes! Préparez-vous!');
+                                .setDescription('hey <@&439152204969148446> Les teralystes arrivent dans quelques minutes! Préparez-vous!');
                                 discord_message.channel.send(embed).then((message) => rememberMsg = message);
                                 rememberMsgSent = true;
 
