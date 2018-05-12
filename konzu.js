@@ -10,7 +10,7 @@ let rememberMsg = null;
 let servers = {};
 const sign = '!';
 
-bot.login('process.env.TOKEN');
+bot.login('process.env.TOKEN')
 // let stop = false; // for use with while and setTimeout
 
 bot.on('ready', function () {
