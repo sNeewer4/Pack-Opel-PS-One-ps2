@@ -169,7 +169,7 @@ function update(discord_message, channel) {
                         //Jour
                         message.content = `il fait jour\n**__Temps restant__**\n${moment(added_time).format('HH:mm:ss')}\n**__Debut de la nuit__**\n à ${data_expiry.format('HH:mm')}`
                         message.img = "https://vignette.wikia.nocookie.net/warframe/images/c/cc/Conclave_Sun.png/revision/latest?cb=20150322082734"
-                        if(moment(expire_in).valueOf() < 6000000 && !rememberMsgSent){ // moins de 20 mins
+                        if(moment(expire_in).valueOf() < 1200000 && !rememberMsgSent){ // moins de 20 mins
                                 const embed = new Discord.RichEmbed()
                                 .setTitle("[**__les dernières minutes __**]")
                                 .setURL("https://hub.warframestat.us")
